@@ -5,6 +5,8 @@ while True:
         operation = input("Vous voulez * / + ou - : ")
         premier_nombre = int(input("Entrez le premier nombre : "))
         deuxieme_nombre = int(input("Entrez le deuxième nombre : "))
+        if operation == "easter egg":
+            print("bravo vous avez trouvez l'easter egg")
         if operation == "+" :
             resultat_addition = premier_nombre + deuxieme_nombre
             print("Le résultat est ", resultat_addition)
@@ -17,6 +19,8 @@ while True:
         if operation == "-":
             resultat_soustraction = premier_nombre - deuxieme_nombre
             print("Le résultat est ", resultat_soustraction)
+        if operation not in ["*","+","-","-","easter egg"]:
+            print("merci de saisire une * + - ou +")
     except ValueError:
         print(" Attention, il faut entrer un nombre ou un signe en fonction de ce qui vous est demandé.")
     except KeyboardInterrupt :
@@ -24,3 +28,4 @@ while True:
         break
     except:
         print(" Une erreur est survenue.")
+
