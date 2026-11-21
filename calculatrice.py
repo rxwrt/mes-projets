@@ -29,3 +29,10 @@ while True:
     except:
         print(" Une erreur est survenue.")
 
+# pour prochaine mise a jour :
+# faire un autre scripte que
+# se lancera quand on utilisera
+# l'easter egg exemple un jeu
+
+
+
